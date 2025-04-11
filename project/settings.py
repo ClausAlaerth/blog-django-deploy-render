@@ -154,7 +154,7 @@ MEDIA_URL = '/media/'
 # /data/web/media
 # MEDIA_ROOT = DATA_DIR / "media"
 
-MEDIA_ROOT = '/opt/render/project/src/media/'
+MEDIA_ROOT = '/opt/render/project/src/mediafiles/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
