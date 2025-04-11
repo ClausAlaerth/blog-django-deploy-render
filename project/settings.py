@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # /data/web/static
 # /data/web/media
-DATA_DIR = BASE_DIR.parent / "data" / "web"
+DATA_DIR = BASE_DIR / "data" / "web"
 
 # DOTENV
-load_dotenv(BASE_DIR.parent / "dotenv_files" / ".env", override=True)
+load_dotenv(BASE_DIR / "dotenv_files" / ".env", override=True)
 
 
 # Quick-start development settings - unsuitable for production
