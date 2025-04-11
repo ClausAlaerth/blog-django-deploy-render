@@ -12,7 +12,7 @@ services:
     buildCommand: "./build.sh"
     startCommand: "python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"    
     envVars:
-      - key: postgresql://clausalaerth:flsDz3cxI3NoWL03je97IVraaOgGlNhg@dpg-cvs9l1ur433s73c1l2qg-a.oregon-postgres.render.com/djangoappdb_48qi
+      - key: djangoappdb_48qi
         fromDatabase:
           name: djangoappdb
           property: connectionString
