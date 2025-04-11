@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-from dotenv import load_dotenv
 from pathlib import Path
 import dj_database_url
 import os
@@ -37,8 +36,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "127.0.0.1", "localhost", "0.0.0.0", "https://project-rl9b.onrender.com",
-    "1.1"
+    "127.0.0.1", "localhost",
+    "35.160.120.126", "44.233.151.27",
+    "34.211.200.85",
 ]
 
 
