@@ -37,7 +37,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "127.0.0.1", "localhost", "0.0.0.0",
+    "127.0.0.1", "localhost", "0.0.0.0", "https://project-rl9b.onrender.com",
+    "1.1"
 ]
 
 
