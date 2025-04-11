@@ -11,11 +11,10 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
-import os
-import dj_database_url
-from pathlib import Path
 from dotenv import load_dotenv
+from pathlib import Path
+import dj_database_url
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -111,10 +110,8 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        engine='django.db.backends.postgresql',
-        default='postgres://...',
-        conn_max_age=600,
-        conn_health_checks=True,
+        default='postgresql://clausalaerth:mZMxcp5hXA7vomsrEfhaFIwqxNwRPfGZ@dpg-cvsa87s9c44c739t9cpg-a.oregon-postgres.render.com/djangoapp_gm44',
+        conn_max_age=600
     )
 }
 
