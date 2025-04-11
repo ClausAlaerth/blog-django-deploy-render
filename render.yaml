@@ -9,7 +9,7 @@ services:
     plan: free
     name: djangoapp
     runtime: python
-    buildCommand: "./djangoapp/build.sh"
+    buildCommand: "./build.sh"
     startCommand: "python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"    
     envVars:
       - key: djangoappdb_48qi
